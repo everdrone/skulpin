@@ -47,6 +47,7 @@ winit-22 = ["skulpin-app-winit/winit-22"]
 winit-23 = ["skulpin-app-winit/winit-23"]
 winit-24 = ["skulpin-app-winit/winit-24"]
 winit-25 = ["skulpin-app-winit/winit-25"]
+winit-28 = ["skulpin-app-winit/winit-28"]
 winit-latest = ["skulpin-app-winit/winit-latest"]
 
 default = []
@@ -86,9 +87,8 @@ required-features = []
 
 [[example]]
 name = "interactive_winit_app"
-required-features = ["winit-app", "winit-25"]
+required-features = ["winit-app", "winit-28"]
 
 [[example]]
 name = "physics"
 required-features = ["winit-app", "winit-25"]
-

@@ -189,7 +189,7 @@ impl App {
         renderer_builder: RendererBuilder,
     ) -> ! {
         // Create the event loop
-        let event_loop = winit::event_loop::EventLoop::<()>::with_user_event();
+        let event_loop = winit::event_loop::EventLoopBuilder::<T>::with_user_event().build();
 
         let winit_size = match inner_size {
             Size::Physical(physical_size) => winit::dpi::Size::Physical(
